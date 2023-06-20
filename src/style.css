@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: black;
+    padding: 48px 64px;
+}
+.hidden{
+    display: none !important;
+}
+
+h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'coiny', sans-serif;
+    color:white;
+
+}
+.fact-form{
+    background-color: rgb(100, 96, 96);
+    padding: 16px 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.header{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+#root {
+    max-width: 1500px;
+    margin: 0 auto;
+}
+.main{
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 47px;
+    height: 60vh;
+}
+@media (max-width:900px){
+    .main {
+        grid-template-columns:  1fr ;
+        }
+}
+.logo{
+    display: flex;
+    cursor: pointer;
+    transition:.8s ease all;
+    align-items: center;
+    line-height: 1;
+    margin-top:4px;
+    gap: 15px;
+
+}
+.logo img{
+    width: 68px;
+    height: 68px;
+}
+section{
+    overflow: scroll;
+}
+.fact{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1.4;
+    font-family:'sono', sans-serif;
+    color: white;
+    margin-bottom: 25px;
+    padding: 15px;
+    border: 4px solid rgb(232, 94, 94);
+    background-color:rgb(147, 147, 164);
+    gap: 20px;
+    border-radius: 15px;
+
+}
+@media(max-width: 1200px){
+    .fact{
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+}
+.vote-buttons{
+    margin-left: auto;
+    flex-shrink: 0;
+    display: flex;
+    gap: 8px;
+}
+.vote-buttons button{
+    border: none;
+    background-color: rgb(87, 81, 81);
+    font-size: 18px;
+    padding: 6px 12px;
+    border-radius: 50px;
+    color: white;
+    font-family: inherit;
+    font-weight: 600px;
+    cursor: pointer;
+}
+.vote-buttons button:hover{
+    background-color: black ;
+    transition: 0.5s;
+}
+.vote-buttons button:disabled{
+    background-color: rgb(21, 19, 19) ;
+}
+.disputed{
+    color: red;
+    font-size: bold;
+    margin-right: 10px;
+}
+.tag{
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'coiny', sans-serif;
+    color: white;
+    padding: 3px 0 1px 0;
+}
+ul{
+    list-style:none ;
+}
+.source:link{
+    text-decoration: none;
+    margin-left: 12px;
+    transition: all;
+    
+
+}
+.source:hover{
+    color: purple; 
+
+}
+.btn{
+    font-family: 'coiny', sans-serif;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 17px;
+    padding: 16px 0 13px;
+    background-image: linear-gradient(125deg, blue, rgb(159, 159, 14),green,red);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    color: whitesmoke;
+    transition: 0.5s;
+    
+}
+.btn:hover{
+    transform: scale(1.1) rotate(-8deg);
+}
+.btn-large{
+    font-size: 20px;
+    padding: 20px 3px 17px;
+}
+.btn-all-category{
+    margin-bottom: 15px;
+    width: 100%;
+
+}
+.fact-form input,.fact-form select{
+    width: 220px;
+    background-color: rgb(178, 183, 187);
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    font-size: 18px;
+    color: white;
+}
+.fact-form input::placeholder{
+    color: white;
+}
+.fact-form span{
+    font-size: 20px;
+    font-family: 600px;
+    margin-right: 18px;
+}
+.fact-form input:first-child{
+    flex-grow: 1;
+}
+@media(max-width:1000px){
+    body{
+        padding: 32px 48px;
+
+    }
+    .fact-form{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .fact-form input, .fact-form select{
+        width: auto ;
+    }
+}
+.loader{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 24px;
+    color: white;
+}
